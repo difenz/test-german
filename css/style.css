@@ -371,13 +371,13 @@ main {
 
     .main__text {
         margin-top: 100px;
-        font-size: 28px;
+        font-size: 30px;
         margin-left: 15px;
     }
 
     .sub__text {
         font-size: 18px;
-        margin-top: 0px;
+        margin-top: -20px;
     }
 
     .content {
@@ -385,7 +385,29 @@ main {
     }
 
     .tabc {
-        display: none;
+        margin-bottom: 40%;
+    }
+
+    .tabc__image img {
+        width: 200px;
+    }
+
+    .tabc__image {
+        padding-left: 10px;
+    }
+
+    .tabc__heading {
+        font-size: 36px;
+    }
+
+    .tabc__text {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .tabc__mini {
+        margin-top: 5px;
+        font-size: 14px;
     }
 
     .case1 {
@@ -406,12 +428,19 @@ main {
     }
 
     .blocks_inside_right {
-        display: none;
+        font-size: 14px;
+        top: 100px;
+        left: 30px;
+        z-index: -1;
+        line-height: 10px;
+        filter: opacity(100%);
+        text-align: start;
     }
 
     .aftermarquee {
         width: 80%;
         padding: 0;
         margin-top: -50px;
+        font-size: 18px;
     }
   }
