@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     color: #212121;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .container {
@@ -543,7 +543,7 @@ input:focus ~ .highlight {
   to 	{ width:0; background:transparent; }
 }
 
-a.send-btn {
+.send-btn {
   float: left;
   color: #212121;
   transition: 0.2s ease;
@@ -555,7 +555,7 @@ a.send-btn {
   transition: all 0.2s ease;
 }
 
-a.send-btn:hover {
+.send-btn:hover {
   color: #fff;
   background-color: #0038E6;
   cursor: pointer;
@@ -614,7 +614,7 @@ body.menu-active .menu::before {
   }
 
   .project__container {
-    gap: 50px;
+    gap: 60px;
   }
 
     .header__items {
@@ -681,7 +681,7 @@ body.menu-active .menu::before {
     .project__items_btn {
       font-size: 16px;
       padding: 20px 30px;
-      width: 80%;
+      width: 90%;
     }
 
     .project__item_text h1{
