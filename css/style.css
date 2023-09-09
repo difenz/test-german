@@ -689,7 +689,7 @@ body.menu-active .menu::before {
     }
 
     .formmor {
-      margin-top: 100px;
+    margin-top: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
