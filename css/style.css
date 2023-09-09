@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     color: #212121;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .container {
@@ -169,7 +169,7 @@ main {
     margin-top: 100px;
     position: relative;
     color: #0038E6;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     font-size: 144px;
     height: 200px;
