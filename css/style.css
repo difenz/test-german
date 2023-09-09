@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     color: #212121;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .container {
@@ -720,6 +720,10 @@ body.menu-active .menu::before {
       filter: opacity(100%);
       text-align: start;
       font-family: bushe grotesque;
+    }
+
+    .mail {
+      font-size: 32px !important;
     }
 
     .aftermarquee {
