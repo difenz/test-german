@@ -333,6 +333,10 @@ main {
     font-family: bushe grotesque;
   }
 
+  .blocks_inside_right_mobile {
+    display: none;
+  }
+
   .case1__inside {
     position: absolute;
     left: 0;
@@ -369,9 +373,13 @@ main {
         display: none;
     }
 
+     .block__with_works {
+      background-position: 0%;
+  }
+
     .main__text {
         margin-top: 100px;
-        font-size: 28px;
+        font-size: 26px;
         margin-left: 15px;
     }
 
@@ -428,13 +436,19 @@ main {
     }
 
     .blocks_inside_right {
-        font-size: 14px;
-        top: 100px;
-        left: 30px;
-        z-index: -1;
-        line-height: 10px;
-        filter: opacity(100%);
-        text-align: start;
+        display: none;
+    }
+
+    .blocks_inside_right_mobile {
+      display: block;
+      font-size: 8px;
+      right: 30px;
+      z-index: -1;
+      gap: 10px;
+      line-height: 10px;
+      filter: opacity(100%);
+      text-align: start;
+      font-family: bushe grotesque;
     }
 
     .aftermarquee {
