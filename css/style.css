@@ -614,6 +614,10 @@ body.menu-active .menu::before {
         height: auto;
     }
 
+    footer {
+      width: 81% !important;
+    }
+
     .project__item {
       flex: 0 0 100%; 
   }
@@ -738,6 +742,49 @@ body.menu-active .menu::before {
         margin-top: -50px;
         font-size: 18px;
     }
+
+    footer {
+      flex-direction: column;
+    }
+
+    .gray {
+      font-size: 32px !important;
+    }
+
+    .footer__item p {
+      font-size: 24px !important;
+    }
+
+    .footer__item {
+      margin-top: 50px;
+    }
+
+    .links a {
+      font-size: 24px !important;
+    }
+
+    .topnone {
+      margin-top: 10px !important;
+    }
+
+    .behance {
+      width: 30px !important;
+    }
+
+    .copyright {
+      width: 100%;
+    }
+    
+    .footer__text {
+      display: flex;
+      flex-direction: column !important;
+      justify-content: space-between;
+      font-size: 28px;
+    }
+
+    .footer__item {
+      width: 100% !important;
+    }
   }
 
   
@@ -761,3 +808,130 @@ body.menu-active .menu::before {
     font-size: 86px;
     margin: 0;
   }
+
+
+footer {
+  margin-top: 100px;
+  padding: 50px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100%;
+  color: #fff;
+}
+
+.copyright {
+  width: 70%;
+  font-size: 12px;
+}
+
+.behance {
+  width: 20px;
+  filter: invert(1);
+}
+
+small {
+  opacity: 60%;
+}
+
+.gray {
+  font-size: 24px;
+  opacity: 60%;
+  font-weight: 300;
+  margin-bottom: 30px !important;
+}
+
+.footer__item p {
+  font-size: 16px;
+}
+
+.links {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__main {
+  font-family: bushe grotesque;
+  font-size: 96px;
+}
+
+.footer__item {
+  width: 40%;
+}
+
+.footer__item p {
+  margin: 10px 0;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: 16px;
+  opacity: 60%;
+  font-weight: 300;
+}
+
+.links a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+  font-size: 24px;
+}
+
+.links a:hover {
+  opacity: 60%;
+}
+
+.behance {
+  transition: opacity 0.3s ease;
+}
+
+.behance:hover {
+  opacity: 60%;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.icons {
+  filter: invert(1);
+}
+
+.icons img {
+  width: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.icons img:hover {
+  opacity: 60%;
+}
+
+.ml10px {
+  margin-left: 10px;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.footer__left {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+  flex-direction: column;
+}
