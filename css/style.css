@@ -616,6 +616,11 @@ body.menu-active .menu::before {
 
     footer {
       width: 81% !important;
+      padding: 10px;
+    }
+
+    .footer__main {
+        font-size: 56px !important;
     }
 
     .project__item {
