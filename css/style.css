@@ -753,11 +753,11 @@ body.menu-active .menu::before {
     }
 
     .gray {
-      font-size: 32px !important;
+      font-size: 24px !important;
     }
 
     .footer__item p {
-      font-size: 24px !important;
+      font-size: 18px !important;
     }
 
     .footer__item {
@@ -765,7 +765,7 @@ body.menu-active .menu::before {
     }
 
     .links a {
-      font-size: 24px !important;
+      font-size: 18px !important;
     }
 
     .topnone {
