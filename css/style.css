@@ -58,7 +58,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: safe;
 }
 
 
@@ -608,6 +608,13 @@ input:focus ~ .highlight {
     .footer__main {
         font-size: 56px !important;
     }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+  }
 
     .project__item {
       flex: 0 0 100%; 
