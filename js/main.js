@@ -59,29 +59,37 @@ closeModalButtons.forEach(button => {
   });
 });
 
-const modal = document.getElementById('modal1');
-const slider = modal.querySelector('.slider');
-const sliderItems = modal.querySelectorAll('.slider-item');
-const prevButton = modal.querySelector('.prev-slide');
-const nextButton = modal.querySelector('.next-slide');
+function initializeModalSlider(modalId) {
+  const modal = document.getElementById(modalId);
+  const slider = modal.querySelector('.slider');
+  const sliderItems = modal.querySelectorAll('.slider-item');
+  const prevButton = modal.querySelector('.prev-slide');
+  const nextButton = modal.querySelector('.next-slide');
 
-let currentIndex = 0;
+  let currentIndex = 0;
 
-function updateSlider() {
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  function updateSlider() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+      updateSlider();
+  });
+
+  nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % sliderItems.length;
+      updateSlider();
+  });
+
+  updateSlider();
 }
 
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
-    updateSlider();
-});
+// Инициализация слайдеров для модальных окон
+initializeModalSlider('modal1');
+initializeModalSlider('modal2');
+// Добавьте инициализацию для других модальных окон по мере необходимости
 
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % sliderItems.length;
-    updateSlider();
-});
-
-updateSlider();
 
 
 const modal1 = document.getElementById('modal1');
@@ -103,7 +111,7 @@ function enableBodyScroll() {
 openModalButtons.forEach(button => {
     button.addEventListener("click", () => {
         const modalId = button.getAttribute("data-modal");
-        const modal1 = document.getElementById(modalId);
+        const modal = document.getElementById(modalId);
         modal1.classList.add("show");
         modal1.classList.add("modal-overlay"); // Добавляем класс для размытого фона
         isModalOpen = true; // Устанавливаем, что модальное окно открыто
@@ -114,9 +122,9 @@ openModalButtons.forEach(button => {
 closeModalButtons.forEach(button => {
     button.addEventListener("click", () => {
         const modalId = button.getAttribute("data-modal");
-        const modal1 = document.getElementById(modalId);
-        modal1.classList.remove("show");
-        modal1.classList.remove("modal-overlay"); // Удаляем класс для размытого фона
+        const modal = document.getElementById(modalId);
+        modal.classList.remove("show");
+        modal.classList.remove("modal-overlay"); // Удаляем класс для размытого фона
         isModalOpen = false; // Устанавливаем, что модальное окно закрыто
         enableBodyScroll(); // Разблокируем прокрутку body
     });
