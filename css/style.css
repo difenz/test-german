@@ -613,7 +613,7 @@ input:focus ~ .highlight {
     }
 
     .modal-content {
-      margin: 40% auto !important;
+      margin: 50% auto !important;
       padding: 0px;
       width: 90% !important;
       /* max-height: 50vh !important; */
@@ -796,6 +796,16 @@ input:focus ~ .highlight {
     .behance {
       width: 30px !important;
     }
+
+    .prev-slide img,
+.next-slide img {
+  width: 10px !important;
+}
+
+.close-modal-btn {
+  padding: 10px 20px !important;
+  font-size: 18px;
+}
 
     .copyright {
       width: 100%;
@@ -1070,7 +1080,7 @@ a {
 
 .modal-content {
   position: absolute;
-  background-color: #fff;
+  background-color: none;
   margin: 5% auto;
   padding: 0px;
   width: 70%;
@@ -1115,7 +1125,7 @@ a {
 
 .slider-item img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   /* border-radius: 30px; */
 }
 
