@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
     <div class="container">
       <header class="header">
         <div class="header__logo">
@@ -92,9 +92,47 @@
                 </div>
               </div>
               <p data-aos="fade-right"  class="aftermarquee">За всю историю своей работы решил много задач. Придумал проекты которых нет у конкурентов. Упаковал половину города и создал свой круг людей, которые мне помогают до сих пор</p>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-btn" data-modal="modal1">&times;</span>
+            <div class="slider-container">
+              <div class="slider">
+                  <div class="slider-item"><img src="src/TABC.svg" alt=""></div>
+                  <div class="slider-item"><img src="src/tabc/3.png" alt=""></div>
+                  <div class="slider-item"><img src="src/tabc/4.png" alt=""></div>
+                  <!-- Добавьте больше слайдов по мере необходимости -->
+              </div>
+              <button class="prev-slide"><img src="src/left.svg" alt=""></button>
+              <button class="next-slide"><img src="src/right.svg" alt=""></button>
+              <!-- <h1 class="main__text_slider">Чешуя и пена</h1> 
+              <p class="slider__text">Lorem ipsum dolor sit amet consectetur. Malesuada tortor purus egestas blandit sagittis nibh dictumst. Tempor mattis mauris purus libero ullamcorper tincidunt nulla massa donec. Pharetra magnis commodo mauris fames volutpat semper nisl maecenas.</p> -->
+          </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-btn" data-modal="modal2">&times;</span>
+            <p>Содержимое Модального Окна 2</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-btn" data-modal="modal3">&times;</span>
+            <p>Содержимое Модального Окна 3</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-btn" data-modal="modal4">&times;</span>
+            <p>Содержимое Модального Окна 4</p>
+        </div>
+    </div>
               <div class="project__container">
                 <div class="project__item left">
-                  <div class="project__item_img tabc"><img src="src/TABC.svg" alt=""><button class="show-case-button">Показать</button></div>
+                  <div class="project__item_img tabc"><img src="src/TABC.svg" alt=""><button class="show-case-button" data-modal="modal1">Показать</button></div>
                   <div class="project__item_text"><h1>Создал робота который помогает кассирам в их работе. Закрывает отчеты, присылает новости, объявляет новые акции</h1>
                   <p class="project__item_mini">А так же, снабжен искусственным интеллектом на базе ChatGPT 3.5 </p>
                   <div class="project__item_btns">
@@ -105,7 +143,7 @@
                 </div>
                 </div>
                 <div class="project__item">
-                  <div class="project__item_img kaifcandy"><img src="src/kaifcandy.svg" alt=""><button class="show-case-button">Показать</button></div>
+                  <div class="project__item_img kaifcandy"><img src="src/kaifcandy.svg" alt=""><button class="show-case-button" data-modal="modal2">Показать</button></div>
                   <div class="project__item_text"><h1>А что если — сделать конфеты, которых рынок еще не видел? С такими мыслями я упаковывал бренд Kaif Candy</h1>
                   <p class="project__item_mini">Сначала товар — потом деньги, теперь не прокатит, банка выиграла</p>
                   <div class="project__item_btns">
@@ -116,7 +154,7 @@
                 </div>
                 </div>
                 <div class="project__item left">
-                  <div class="project__item_img tabc"><img src="src/tabtab.svg" alt=""><button class="show-case-button">Показать</button></div>
+                  <div class="project__item_img tabc"><img src="src/tabtab.svg" alt=""><button class="show-case-button" data-modal="modal3">Показать</button></div>
                   <div class="project__item_text"><h1>Как я на протяжении года, поддерживал табачную компанию</h1>
                   <p class="project__item_mini">Не в плане что я стоял и курил, я делал дизайн и прочее </p>
                   <div class="project__item_btns">
@@ -127,7 +165,7 @@
                 </div>
                 </div>
                 <div class="project__item">
-                  <div class="project__item_img kaifcandy testproject"><img src="src/testproject.png" alt=""><button class="show-case-button">Показать</button></div>
+                  <div class="project__item_img kaifcandy testproject"><img src="src/testproject.png" alt=""><button class="show-case-button" data-modal="modal4">Показать</button></div>
                   <div class="project__item_text"><h1>Макет сайта для студии Brainlook </h1>
                   <p class="project__item_mini">Одно из тестовых заданий</p>
                   <div class="project__item_btns">
