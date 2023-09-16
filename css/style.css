@@ -20,6 +20,7 @@ body {
     padding: 0;
     color: #212121;
     /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -121,6 +122,29 @@ main {
     margin: 0;
     text-align: end;
     padding: 0;
+    margin-top: 50px;
+}
+
+.contacts__info {
+  margin-top: 10px;
+}
+
+.contacts__icons {
+  display: flex;
+  flex-direction: row; 
+  justify-content: end;
+  align-items: end;
+  gap: 30px;
+}
+
+.contacts__icon img{
+  width: 40px;
+  transition: all 0.3s ease;
+}
+
+.contacts__icon img:hover{
+  opacity: 60%;
+  transform: scale(1.1);
 }
 
 .main__text_slider {
@@ -613,7 +637,7 @@ input:focus ~ .highlight {
     }
 
     .modal-content {
-      margin: 50% auto !important;
+      margin: 5% auto !important;
       padding: 0px;
       width: 90% !important;
       /* max-height: 50vh !important; */
